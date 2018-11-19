@@ -1,5 +1,5 @@
 class Article < ApplicationRecord
-    has_many :reply
+    has_many :replies
     validates :title, presence: true, length: { minimum: 5 }
     validates :text, presence: true, length: { minimum: 10 }
 end
