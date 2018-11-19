@@ -1,3 +1,17 @@
 // Place all the styles related to the Replies controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+input[type=text] {
+    width: 30%;
+    padding: 12px 12px;
+    border: 2px solid #ffd700;
+    background: #f8f8f8;
+}
+textarea {
+    width: 30%;
+    height: 50px;
+    padding: 12px 12px;
+    border: 2px solid #ffd700;
+    background-color: #f8f8f8;
+    resize: none;
+}
