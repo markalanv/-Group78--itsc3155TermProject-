@@ -1,15 +1,33 @@
 h1{
-    font-size:24px;
+    font-size:150px;
     color:white;
+    text-align: center;
+    text-align: top;
+    padding-bottom: 20px;
 }
 
 body{
     background: #239B56;
+   
 }
 
 p{
     color: #DBD134;
+   
 }
 a{
     color: gold;
+   
+}
+
+table{
+    
+    padding-left: 400px;
+    font-size: 30px;
+}
+
+#link{
+    position: relative;
+    bottom: 100px;
+    padding-left: 700px;
 }

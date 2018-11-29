@@ -1,9 +1,9 @@
 <h1>49er Blogs</h1>
-<%= link_to 'New Blog', new_article_path %>
+<div id="link"><%= link_to 'New Blog', new_article_path %></div>
 <table>
   <tr>
-    <th>Title</th>
-    <th>Text</th>
+    <th><u>Title</u></th>
+    <th><u>Text</u></th>
   </tr>
  
   <% @articles.each do |article| %>
