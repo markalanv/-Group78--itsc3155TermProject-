@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   
   resources :sessions, only: [:create, :destroy]
   get 'welcome/index'
-  
+  get '/rules' => 'application#ruleset'
   
   resources :articles do
     resources :replies

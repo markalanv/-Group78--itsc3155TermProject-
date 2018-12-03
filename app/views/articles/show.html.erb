@@ -12,6 +12,7 @@
 <%= render @article.replies %>
 
 <h2>Reply: </h2>
+<div id="reply_rules"><%= link_to 'Posting Rules', '/rules' %></div>
 <%= render 'replies/form' %>
 
 <%= link_to 'Blog List', articles_path %>

@@ -17,7 +17,6 @@ p{
 }
 a{
     color: gold;
-   
 }
 
 table{
@@ -32,6 +31,12 @@ table{
    right: 0;
 }
 
+#rules_link
+{
+    position:absolute;
+    top: 0;
+    right: 100px;
+}
 #pic2
 {
     position: relative;
@@ -43,6 +48,7 @@ table{
     bottom:250px;
     right:535px;
 }
+
 #pic4
 {
     position: relative;
@@ -72,8 +78,22 @@ nav.share{
     padding-bottom: 30px;
    
 }
+
+iframe
+{
+    padding-left: 0px;
+    display: inline-block;
+}
+
 nav.share div {float:left;}
 #___plusone_0 {font-size: default !important;}
 .fb_iframe_widget span { vertical-align: top; }
+
 .fb_edge_widget_with_comment { vertical-align: top;}
-.fb-like{display:inline-block}
+.fb-like{display:inline-block;}
+a data-pin-config
+{
+    position: absolute;
+    padding-bottom: 100px;
+    bottom: 50;
+}
