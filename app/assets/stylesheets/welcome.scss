@@ -27,9 +27,9 @@ table{
 }
 
 #link{
-    position: relative;
-    bottom: 100px;
-    padding-left: 700px;
+    position: absolute;
+   top: 0;
+   right: 0;
 }
 
 #pic2
@@ -62,3 +62,18 @@ table{
     left: 1285px;
     top: 50px;
 }
+
+nav.share{
+    
+    position: relative;
+    top: 100px;
+    left: 300px;
+    display: inline-block;
+    padding-bottom: 30px;
+   
+}
+nav.share div {float:left;}
+#___plusone_0 {font-size: default !important;}
+.fb_iframe_widget span { vertical-align: top; }
+.fb_edge_widget_with_comment { vertical-align: top;}
+.fb-like{display:inline-block}

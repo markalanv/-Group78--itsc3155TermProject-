@@ -2,7 +2,8 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.4.1'
-
+gem 'social-share-button'
+gem 'shareable'
 gem "omniauth-google-oauth2", "~> 0.2.1"
 gem "omniauth-oauth2", "~> 1.3.1"
 
