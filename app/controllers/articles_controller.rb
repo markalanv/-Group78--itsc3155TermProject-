@@ -1,7 +1,21 @@
 class ArticlesController < ApplicationController
+  include SessionsHelper
+    
+    
+    
+    helper_method :current_user
+    helper_method :logged_in?
+    
+    before_action :require_login
+     
+  
    def index
-    @articles= Article.all
-   end
+   
+     
+       @articles= Article.all
+      end
+      
+   
   def show
     @article = Article.find(params[:id])
   end

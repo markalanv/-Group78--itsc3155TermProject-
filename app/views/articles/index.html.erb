@@ -1,6 +1,8 @@
+
 <h1>49er Blogs</h1>
 <div id="link"><%= link_to 'New Blog Post', new_article_path %></div>
 <div id="rules_link"><%= link_to 'Posting Rules', '/rules' %></div>
+<%= current_user.email %>
 <table>
   <tr>
     <th><u>Category</u></th>
