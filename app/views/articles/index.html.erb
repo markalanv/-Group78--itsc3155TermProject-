@@ -1,8 +1,15 @@
-
 <h1>49er Blogs</h1>
 <div id="link"><%= link_to 'New Blog Post', new_article_path %></div>
 <div id="rules_link"><%= link_to 'Posting Rules', '/rules' %></div>
-<%= current_user.email %>
+
+<% if (current_user.email.split("@").last != ('uncc.edu')) %>
+    <h3> Sorry you must be signed in with a 'UNCC' e-mail address!</h3>
+    <%= link_to 'Go Back Home', root_path %>
+<% else %>
+
+
+
+
 <table>
   <tr>
     <th><u>Category</u></th>
@@ -35,3 +42,4 @@
 
 
 <%= render_shareable %>
+<% end %>

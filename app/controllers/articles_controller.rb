@@ -10,8 +10,6 @@ class ArticlesController < ApplicationController
      
   
    def index
-   
-     
        @articles= Article.all
       end
       
@@ -19,8 +17,12 @@ class ArticlesController < ApplicationController
   def show
     @article = Article.find(params[:id])
   end
+  
     def new
+      if (current_user.email.split("@").last == ('uncc.edu'))
       @article = Article.new
+    else
+    end
     end
     
     
