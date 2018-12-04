@@ -3,6 +3,7 @@ class CreateReplies < ActiveRecord::Migration[5.2]
     create_table :replies do |t|
       t.string :name
       t.string :date
+      t.string :category
       t.text :reply
       t.references :article, foreign_key: true
 

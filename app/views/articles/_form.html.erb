@@ -17,7 +17,17 @@
   <p>
     <%= f.label :title %><br>
     <%= f.text_field :title %>
+   
   </p>
+  
+  <p>
+     <%= f.label :category %><br>
+    <%= f.collection_select :category, Article::CATEGORIES, :to_s, :to_s, 
+       :include_blank => true%>
+    
+  </p>
+  
+  
  
   <p>
     <%= f.label :text %><br>
