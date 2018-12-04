@@ -8,8 +8,9 @@ input[type=text] {
     background: #f8f8f8;
 }
 textarea {
-    width: 50%;
-    height: 300px;
+    overflow-y: scroll;
+    width: 200px;
+    height: 600px;
     padding: 12px 12px;
     border: 2px solid #ffd700;
     background-color: #f8f8f8;
@@ -26,4 +27,19 @@ input[type=button], input[type=submit] {
 }
 
   
-  
+#viewButton
+{
+    position: relative;
+    
+    padding-right: 700px;
+}
+#rulesButton
+{
+    position: relative;
+    padding-right: 1000px;
+}
+#newButton
+{
+    position: relative;
+    padding-right: 400px;
+}

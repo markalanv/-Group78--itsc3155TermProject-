@@ -1,4 +1,10 @@
 <h1>49er Blogs</h1>
-<%= link_to 'New Blog Post', new_article_path %>
-<%= link_to 'View Posts' , controller: 'articles' %>
-<%= link_to 'Rules Page' ,  '/rules' %>
+<div id = 'newButton'>
+<%= button_to "New Blog Post", new_article_path, :method => "get" %>
+</div>
+<div id='viewButton'>
+<%= button_to "View Posts", articles_path, :method => "get" %>
+</div>
+<div id='rulesButton'>
+<%= button_to "Rules Page", '/rules', :method => "get" %>
+</div>

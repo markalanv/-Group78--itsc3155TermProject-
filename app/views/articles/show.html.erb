@@ -2,13 +2,14 @@
     <strong>Category:</strong>
    
     </p>
-  
-  
     <p>
     <strong>Title:</strong>
     <%= @article.title %>
     </p>
-    
+     <p>
+    <strong> Date :</strong> <br>
+    <%= Date.today %>
+    </p>
     <p>
     <strong> Image :</strong> <br>
     <%= image_tag @article.image.url(:medium) %>
