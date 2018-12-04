@@ -10,6 +10,11 @@
     </p>
     
     <p>
+    <strong> Image :</strong> <br>
+    <%= image_tag @article.image.url(:medium) %>
+    </p>
+    
+    <p>
         <strong>Text:</strong>
         <%= @article.text %>
     </p>
