@@ -206,21 +206,8 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
-    rspec-core (3.8.0)
-      rspec-support (~> 3.8.0)
     rspec-expectations (3.8.2)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.8.0)
-    rspec-mocks (3.8.0)
-      diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.8.0)
-    rspec-rails (3.8.1)
-      actionpack (>= 3.0)
-      activesupport (>= 3.0)
-      railties (>= 3.0)
-      rspec-core (~> 3.8.0)
-      rspec-expectations (~> 3.8.0)
-      rspec-mocks (~> 3.8.0)
       rspec-support (~> 3.8.0)
     rspec-support (3.8.0)
     ruby_dep (1.5.0)
@@ -285,7 +272,6 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.1.0)
   byebug
-  capybara
   coffee-rails (~> 4.2)
   cucumber
   cucumber-rails
@@ -298,7 +284,7 @@ DEPENDENCIES
   paperclip (~> 6.0.0)
   puma (~> 3.11)
   rails (~> 5.2.1)
-  rspec-rails
+  rspec-expectations
   sass-rails (~> 5.0)
   shareable
   social-share-button
