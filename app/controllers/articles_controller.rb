@@ -6,7 +6,7 @@ class ArticlesController < ApplicationController
     helper_method :current_user
     helper_method :logged_in?
     
-    before_action :require_login
+   
      
   
    def index
@@ -19,11 +19,11 @@ class ArticlesController < ApplicationController
   end
   
     def new
-      if (current_user.email.split("@").last == ('uncc.edu'))
+      
       @article = Article.new
-    else
+    
     end
-    end
+    
     
     
     
