@@ -1,6 +1,8 @@
  <p>
     <strong>Name:</strong>
-    <%= reply.name %>
+    
+    <%= reply.name%>
+    
   </p>
  <p>
     <strong>Date:</strong>
@@ -10,8 +12,10 @@
     <strong>Reply:</strong>
     <%= reply.reply %>
   </p>
+  
   <p>
       <%= link_to 'Destroy Comment', [reply.article, reply],
                    method: :delete,
                    data: { confirm: 'Are you sure?' } %>
   </p>
+  

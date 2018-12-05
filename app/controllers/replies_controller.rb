@@ -1,7 +1,11 @@
 class RepliesController < ApplicationController
+    
+    
      def create
         @article = Article.find(params[:article_id])
         @reply = @article.replies.create(reply_params)
+        @reply.name = current_user.name
+        @reply.save
         redirect_to article_path(@article)
      end
     def destroy
@@ -10,8 +14,11 @@ class RepliesController < ApplicationController
         @reply.destroy
         redirect_to article_path(@article)
     end
+    
+    
     private
         def reply_params
-            params.require(:reply).permit(:name, :date, :reply)
+            params.require(:reply).permit(:userid, :name, :date, :reply)
+            
         end
 end

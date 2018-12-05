@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_04_234253) do
+ActiveRecord::Schema.define(version: 2018_12_05_020812) do
 
   create_table "articles", force: :cascade do |t|
     t.string "title"
@@ -30,8 +30,10 @@ ActiveRecord::Schema.define(version: 2018_12_04_234253) do
     t.string "date"
     t.text "reply"
     t.integer "article_id"
+    t.integer "userid"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "userid"
     t.index ["article_id"], name: "index_replies_on_article_id"
   end
 
