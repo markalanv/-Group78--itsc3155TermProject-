@@ -3,15 +3,11 @@
 <div id="rules_link"><%= link_to 'Posting Rules', '/rules' %></div>
 
 
-
-
-
-
 <table>
   <tr>
     <th><u>Category</u></th>
     <th><u>Title</u></th>
-    <th><u>Text</u></th>
+    <th><u>Author</u></th>
     
   </tr>
  
@@ -19,13 +15,16 @@
     <tr>
       <td><%= article.category %></td>
       <td><%= article.title %></td>
-      <td><%= article.text %></td>
+      <td><%= article.name %></td>
       <td><%= link_to 'Show', article_path(article) %></td>
+      
+      <% if article.name == current_user.name %>
       <td><%= link_to 'Edit', edit_article_path(article) %></td>
       <td><%= link_to 'Destroy',
                                               article_path(article),
                                               method: :delete,
                                               data: { confirm: 'Are you sure?' } %></td>
+      <% end %>
     </tr>
   <% end %>
 </table>
@@ -34,8 +33,11 @@
 <img id="pic2" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQayEja2IhU2-gxT-ayb8pGeOEvR0ed9GDJVeh9dWrdzNGxGGmT">
 <img id="pic3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyWuhcWjO7_hib1gVzjAlruFeV0hYawS4QT6MbDitK50RwasI2">
 <img id="pic4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEa8DvSJPfSTDYsZeH8jAScDf2iCz81Poj6y6OE5a227bHiuuv">
+-->
 <img id="pic5" src="https://images-na.ssl-images-amazon.com/images/I/516BewhIF7L._SX425_.jpg">
 <img id="pic6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRdHWwdidsH4bPZ7xKYw6MBBGgDuctwshnzL-yx4hG7VrXi7wA8w">
--->
+
+<div id='home_link'><%= link_to 'Home Page' , root_path %></div>
 
 <%= render_shareable %>
+

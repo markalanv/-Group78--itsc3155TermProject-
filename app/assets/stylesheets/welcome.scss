@@ -21,8 +21,17 @@ a{
 
 table{
     
-    padding-left: 200px;
+    padding-left: 350px;
     font-size: 30px;
+}
+th
+{
+    text-align: center;
+}
+td
+{
+    padding: 0 15px 0 15px;
+    
 }
 
 #link{
@@ -37,40 +46,28 @@ table{
     top: 0;
     right: 100px;
 }
-<!--unccharlotte-->
-#pic2
+#home_link
 {
     position: absolute;
-    right: 0;
-   
-}
-<!--woodward-->
-#pic3
-{
-    position: absolute;
-    left: 0px;
-    top: 0px;
-}
-<!--union-->
-#pic4
-{
-    position: absolute;
-    right: 0px;
-    bottom: 600px;
-    
+    top:0;
+    left: 700px;
+    font-size: 30px;
 }
 #pic5
 {
-    position: relative;
+    position: absolute;
     height: 200px;
     right: 1130px;
-    top:250px;
+    top:100px;
+    left: 100px;
 }
 #pic6
 {
-    position: relative;
-    left: 1285px;
-    top: 50px;
+    position: absolute;
+    height: 200px;
+    width: 225px;
+    right: 100px;
+    top: 100px;
 }
 
 nav.share{
@@ -102,5 +99,8 @@ a data-pin-config
     bottom: 50;
 }
 
-
+#welcome
+{
+    font-size: 30px;
+}
 

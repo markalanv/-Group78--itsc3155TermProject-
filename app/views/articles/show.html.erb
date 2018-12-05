@@ -3,6 +3,11 @@
    
     </p>
     <p>
+    <strong>Author:</strong>
+    <%= @article.name %>
+    </p>
+    
+    <p>
     <strong>Title:</strong>
     <%= @article.title %>
     </p>
@@ -12,14 +17,18 @@
     </p>
     <p>
     <strong> Image :</strong> <br>
+    <% if image_tag @article.image.url(:medium) %>
+    No Image Provided
+    <%else%>
     <%= image_tag @article.image.url(:medium) %>
     </p>
+    <%end%>
     
     <p>
         <strong>Text:</strong>
         <%= @article.text %>
     </p>
-  <%= link_to 'Blog List', articles_path %> 
+ 
 <h2>Replies</h2>
 <%= render @article.replies %>
 
